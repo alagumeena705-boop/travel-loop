@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<style>
+
+body{
+  font-family:Arial;
+  background:#f4f4f4;
+  margin:0;
+}
+
+header{
+  background:#1e3a5f;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+.container{
+  padding:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  margin-top:20px;
+  border-radius:10px;
+}
+
+button{
+  padding:12px 20px;
+  background:#1e3a5f;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Traveloop Dashboard</h1>
+</header>
+
+<div class="container">
+
+  <div class="card">
+
+    <h2>Welcome Traveler ✈</h2>
+
+    <p>
+      Plan and manage your dream trips easily.
+    </p>
+
+    <button onclick="goToTrip()">
+      Plan New Trip
+    </button>
+
+  </div>
+
+</div>
+
+<script>
+
+function goToTrip(){
+  window.location.href = "create-trip.html";
+}
+
+</script>
+
+</body>
+</html>
