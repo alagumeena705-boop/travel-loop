@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trip Notes</title>
+</head>
+<body>
+<h1>Trip Notes</h1>
+<textarea placeholder="Write Notes"></textarea>
+<button>Save Note</button>
+</body>
+</html>
