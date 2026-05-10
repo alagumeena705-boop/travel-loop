@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveloop Login</title>
+
+  <style>
+
+    body{
+      font-family:Arial;
+      background:#f0f4f8;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .login-box{
+      background:white;
+      padding:40px;
+      width:350px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      color:#1e3a5f;
+    }
+
+    input{
+      width:100%;
+      padding:12px;
+      margin-top:15px;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      margin-top:20px;
+      background:#1e3a5f;
+      color:white;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:#294d75;
+    }
+
+    p{
+      text-align:center;
+      margin-top:15px;
+    }
+
+    a{
+      color:#1e3a5f;
+      text-decoration:none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <h1>Traveloop</h1>
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="loginUser()">
+      Login
+    </button>
+
+    <p>
+      Don't have an account?
+      <a href="signup.html">Signup</a>
+    </p>
+
+  </div>
+
+  <script>
+
+    function loginUser(){
+
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      if(email === "" || password === ""){
+        alert("Please fill all fields");
+      }
+      else{
+        alert("Login Successful");
+
+        window.location.href = "dashboard.html";
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
